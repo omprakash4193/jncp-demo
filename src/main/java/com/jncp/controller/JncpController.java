@@ -15,4 +15,10 @@ public class JncpController {
         log.info("Request to check application health check.");
         return "UP";
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        log.info("Request to check application health check.");
+        return "Hello, How are u Mr Omi?";
+    }
 }
